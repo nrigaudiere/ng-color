@@ -6,11 +6,12 @@
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",
     "prepublish": "tsc",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "webpack": "rimraf dist && webpack --config config/webpack.dev.js --progress --profile --bail"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/repo"
+    "url": "https://github.com/dolanmiu/ionic-2-color-picker"
   },
   "author": {
     "name": "Dolan Miu",
@@ -21,13 +22,33 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/username/repo/issues"
+    "url": "https://github.com/dolanmiu/ionic-2-color-picker/issues"
   },
   "main": "./dist/index.js",
   "dependencies": {
+    "@angular/common": "^2.4.8",
+    "@angular/compiler": "^2.4.8",
+    "@angular/core": "^2.4.8",
     "@angular/forms": "^2.4.8",
+    "@angular/http": "^2.4.8",
+    "@angular/platform-browser": "^2.4.8",
+    "@angular/platform-browser-dynamic": "^2.4.8",
+    "@angular/router": "~3.4.0",
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader": "^3.0.8",
     "color-convert": "^1.9.0",
-    "ionic-angular": "^2.1.0"
+    "extract-text-webpack-plugin": "^2.0.0",
+    "html-webpack-plugin": "^2.28.0",
+    "ionic-angular": "^2.1.0",
+    "node-sass": "^4.5.0",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.2",
+    "webpack": "^2.2.1",
+    "webpack-merge": "^3.0.0",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.1",
+    "zone.js": "^0.7.4"
   },
   "devDependencies": {
     "@angular/common": "^2.0.0",
