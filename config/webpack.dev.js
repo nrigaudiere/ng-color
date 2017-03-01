@@ -10,7 +10,7 @@ module.exports = webpackMerge(commonConfig, {
         publicPath: 'http://localhost:8080/',
         filename: '[name].js',
         chunkFilename: '[id].chunk.js',
-        libraryTarget: 'commonjs2'
+        libraryTarget: 'commonjs'
     },
     
     plugins: [
