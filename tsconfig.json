@@ -3,6 +3,8 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
+    "module": "commonjs",
+    "target": "es5",
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "rootDir": "./src",
